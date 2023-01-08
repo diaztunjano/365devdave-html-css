@@ -71,10 +71,14 @@ li:last-child {
 }
 
 a:link {
-  color: red;
+  color: orangered;
   text-decoration: none;
 }
 
+a:visited {
+  color: orangered;
+}
+
 a:hover {
-  text-decoration: underline dotted rgb(96, 214, 225); /* Multiple properties */
+  text-decoration: underline dotted orangered; /* Multiple properties */
 }
