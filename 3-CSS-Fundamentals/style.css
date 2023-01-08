@@ -61,3 +61,20 @@ aside {
   border-bottom: 5px solid rgb(96, 214, 225);
   border-radius: 10px;
 }
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline dotted rgb(96, 214, 225); /* Multiple properties */
+}
