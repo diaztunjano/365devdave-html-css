@@ -82,3 +82,15 @@ a:visited {
 a:hover {
   text-decoration: underline dotted orangered; /* Multiple properties */
 }
+
+/* Conflicting styles  */
+.copyright {
+  color: blue;
+}
+.text {
+  color: green;
+}
+
+#copyright {
+  color: red;
+}
