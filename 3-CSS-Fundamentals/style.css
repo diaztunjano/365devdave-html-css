@@ -1,11 +1,7 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
-  font-family: sans-serif;
+body {
   color: rgb(69, 69, 69);
+  font-family: sans-serif;
+  border-top: 10px solid rgb(96, 214, 225);
 }
 
 h1,
