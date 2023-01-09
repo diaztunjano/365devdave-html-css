@@ -18,10 +18,10 @@ h3 {
   font-size: 16px;
 }
 
-#price {
+.price {
   font-size: 24px;
 }
-#free-shipping {
+.free-shipping {
   font-size: 14px;
   color: rgb(159, 159, 159);
   text-transform: uppercase;
@@ -29,27 +29,30 @@ h3 {
 }
 
 li {
-  list-style-type: square;
+  list-style: square;
 }
 
-a {
+/* Always style anchor links with the state (:link, :hover) */
+a:link,
+a:visited {
   color: black;
 }
 
-a:hover {
+a:hover,
+a:active {
   text-decoration: none;
 }
 
 button {
   color: white;
   background-color: black;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 button:hover {
   color: black;
   background-color: white;
-  cursor: pointer;
 }
