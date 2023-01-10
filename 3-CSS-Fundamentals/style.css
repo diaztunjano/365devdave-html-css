@@ -15,6 +15,7 @@ aside {
   border-bottom: 5px solid rgb(96, 214, 225);
   border-radius: 10px;
   padding: 50px 0;
+  width: 500px;
 }
 
 nav {
@@ -32,6 +33,7 @@ article {
   padding-left: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 .post-header {
@@ -129,4 +131,9 @@ a:hover {
 
 #copyright {
   color: red;
+}
+
+.post-image {
+  width: 50%;
+  height: auto;
 }
