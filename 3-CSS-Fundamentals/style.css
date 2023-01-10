@@ -4,6 +4,14 @@ body {
   border-top: 10px solid rgb(96, 214, 225);
 }
 
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-right: 40px;
+  padding-left: 40px; */
+  padding: 20px 40px;
+}
+
 h1,
 h2,
 h3 {
@@ -37,6 +45,11 @@ h4 {
 
 li {
   font-size: 20px;
+  margin-bottom: 5px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 footer p {
