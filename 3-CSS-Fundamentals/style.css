@@ -7,6 +7,7 @@ body {
   color: rgb(69, 69, 69);
   font-family: sans-serif;
   border-top: 10px solid rgb(96, 214, 225);
+  position: relative;
 }
 
 aside {
@@ -40,7 +41,7 @@ article {
   padding-left: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .post-header {
@@ -116,7 +117,7 @@ li:last-child {
 }
 
 a:link {
-  color: orangered;
+  color: rgb(94, 94, 229);
   text-decoration: none;
 }
 
@@ -143,4 +144,31 @@ a:hover {
 .post-image {
   width: 50%;
   height: auto;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+button {
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  bottom: 30px;
+  right: 30px;
 }
