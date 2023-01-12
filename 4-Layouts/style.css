@@ -265,3 +265,26 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLOATS */
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+}
+
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
