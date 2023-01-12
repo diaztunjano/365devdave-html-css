@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 2;
+}
+
+header {
+  position: relative;
+}
+
+h2 {
+  text-transform: uppercase;
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  padding: 15px;
+}
+
+h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+li {
+  list-style: square;
+  padding-bottom: 5px;
+  margin-left: 20px;
+}
+
+/* Always style anchor links with the state (:link, :hover) */
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.add-to-cart {
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 80px;
+}
+
+.add-to-cart:hover {
+  color: black;
+  background-color: white;
+  border-top: 5px solid;
+  border-color: black;
+}
+
+.shoe-button {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border: none;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.one {
+  background-color: black;
+}
+.two {
+  background-color: rgb(54, 54, 233);
+}
+.three {
+  background-color: rgb(210, 45, 45);
+}
+.four {
+  background-color: khaki;
+}
+.five {
+  background-color: rgb(126, 198, 18);
+}
+.six {
+  background-color: rgb(137, 67, 9);
+}
+
+.sale-banner {
+  position: absolute;
+  padding: 1px 15px;
+  top: -20px;
+  left: -40px;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: inline-block;
+}
+
+.product {
+  border: 5px solid black;
+  width: 825px;
+  margin: 50px auto;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.free-shipping {
+  font-size: 14px;
+  color: rgb(159, 159, 159);
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
