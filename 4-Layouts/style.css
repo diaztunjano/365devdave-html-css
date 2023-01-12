@@ -1,52 +1,64 @@
 * {
-  padding: 0;
+  /* border-top: 10px solid #1098ad; */
   margin: 0;
+  padding: 0;
 }
 
+/* PAGE SECTIONS */
 body {
-  color: rgb(69, 69, 69);
+  color: #444;
   font-family: sans-serif;
-  border-top: 10px solid rgb(96, 214, 225);
+
+  border-top: 10px solid #1098ad;
   position: relative;
 }
 
-aside {
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
   background-color: #f7f7f7;
-  border-top: 5px solid rgb(96, 214, 225);
-  border-bottom: 5px solid rgb(96, 214, 225);
-  border-radius: 10px;
-  padding: 50px 0;
-  width: 500px;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
 }
 
 nav {
   font-size: 18px;
-}
-
-nav a:link {
-  /* background-color: orangered;
-  margin: 20px;
-  padding: 20px;
-  display: block; */
-  margin-right: 30px;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-nav a:link:last-child {
-  margin-right: 0;
-  margin-top: 10px;
-  display: inline-block;
+  /* text-align: center; */
 }
 
 article {
   margin-bottom: 60px;
 }
 
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* SMALLER ELEMENTS */
 h1,
 h2,
 h3 {
-  color: rgb(96, 214, 225);
+  color: #1098ad;
 }
 
 h1 {
@@ -55,37 +67,15 @@ h1 {
   font-style: italic;
 }
 
-h1::first-letter {
-  font-style: normal;
-  margin-right: 5px;
-}
-
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
-  position: relative;
-}
-
-h2::after {
-  content: "TOP"; /* Could be empty*/
-  background-color: #ffe70e;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 16px;
-  color: #000;
-  padding: 4px 10px;
-  position: absolute;
-  top: -15px;
-  right: -25px;
 }
 
 h3 {
   font-size: 30px;
   margin-bottom: 20px;
-}
-
-h3 + p::first-line {
-  color: red;
+  margin-top: 40px;
 }
 
 h4 {
@@ -100,10 +90,6 @@ p {
   margin-bottom: 15px;
 }
 
-/* p::first-line {
-  color: red;
-} */
-
 ul,
 ol {
   margin-left: 50px;
@@ -112,114 +98,170 @@ ol {
 
 li {
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  /* display: inline; */
 }
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
+}
+
+body {
+  /* background-color: orangered; */
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
 
 li:first-child {
   font-weight: bold;
 }
 
 li:last-child {
-  margin-bottom: 0;
   font-style: italic;
 }
 
+li:nth-child(even) {
+  /* color: red; */
+}
+
+/* Misconception: this won't work! */
+article p:first-child {
+  color: red;
+}
+
+/* Styling links */
 a:link {
-  color: rgb(94, 94, 229);
+  color: #1098ad;
   text-decoration: none;
 }
 
 a:visited {
-  color: orangered;
+  /* color: #777; */
+  color: #1098ad;
 }
 
 a:hover {
-  text-decoration: underline dotted orangered; /* Multiple properties */
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
 }
 
-footer p {
-  font-size: 16px;
+a:active {
+  background-color: black;
+  font-style: italic;
 }
+/* LVHA */
 
-button {
-  padding: 20px;
-  font-size: 20px;
-  cursor: pointer;
-  position: absolute;
-  /* top: 0;
-  left: 0; */
-  bottom: 30px;
-  right: 30px;
-}
-
-.container {
-  width: 600px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  margin: 0 auto;
-  /* position: relative; */
-}
-
-.main-header {
-  background-color: #f7f7f7;
-  /* padding: 20px;
-  padding-right: 40px;
-  padding-left: 40px; */
-  padding: 20px 40px;
-  margin-bottom: 60px;
-  text-align: center;
-  /* height: 80px; */
-}
-
-.post-header {
-  margin-bottom: 40px;
-}
-
-.related {
-  list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-/* Conflicting styles  */
-.copyright {
-  color: blue;
-}
-.text {
-  color: green;
-}
-
-#copyright {
-  color: red;
-}
-
-.post-image {
-  width: 80%;
+.post-img {
+  width: 100%;
   height: auto;
 }
 
-/* FLOATS */
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
 
-.author-image {
-  float: left;
-}
+  display: block; */
 
-.author {
-  float: left;
+  margin-right: 30px;
   margin-top: 10px;
-  margin-left: 20px;
+  display: inline-block;
 }
 
-h1 {
-  float: left;
+nav a:link:last-child {
+  margin-right: 0;
 }
 
-nav {
-  float: right;
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  bottom: 50px;
+  right: 50px;
 }
 
-.clear {
-  clear: both;
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
 }
+
+h3 + p::first-line {
+  /* color: red; */
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::before {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
+
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
