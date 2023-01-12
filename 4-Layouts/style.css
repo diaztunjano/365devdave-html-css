@@ -196,6 +196,30 @@ button {
 }
 
 .post-image {
-  width: 50%;
+  width: 80%;
   height: auto;
+}
+
+/* FLOATS */
+
+.author-image {
+  float: left;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
 }
