@@ -92,12 +92,13 @@ a:active {
 .sale-banner {
   position: absolute;
   padding: 1px 15px;
-  top: -18px;
+  top: -20px;
   left: -40px;
   background-color: red;
   color: white;
   text-transform: uppercase;
   letter-spacing: 3px;
+  display: inline-block;
 }
 
 .product {
