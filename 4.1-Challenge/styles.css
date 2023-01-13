@@ -44,8 +44,16 @@ a:active {
   text-decoration: none;
 }
 
+.productImage {
+  float: left;
+  margin-right: 40px;
+}
+
 .productInfo {
   width: 243px;
+  float: left;
+  margin-right: 40px;
+  padding-top: 10px;
 }
 
 .productDescription {
@@ -112,12 +120,14 @@ a:active {
 
 .product {
   border: 5px solid black;
-  width: 825px;
+  width: 835px;
   margin: 50px auto;
 }
 
 .productDetails {
   width: 243px;
+  float: left;
+  margin-top: 8px;
 }
 
 .price {
@@ -130,6 +140,7 @@ a:active {
   color: rgb(159, 159, 159);
   text-transform: uppercase;
   font-weight: bolder;
+  margin-top: 10px;
   margin-bottom: 10px;
   float: right;
 }
