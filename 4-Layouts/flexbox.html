@@ -44,13 +44,32 @@
       /* STARTER */
       font-family: sans-serif;
       background-color: #ddd;
-      font-size: 30px;
+      font-size: 25px;
       margin: 40px;
 
       /* FLEXBOX */
       display: flex;
       align-items: center;
+      justify-content: center;
+      gap: 30px;
 
+    }
+
+    /* .el {
+      Mala practica especificarlo para todos. Lo mejor es en el flex container
+      margin-right: 30px; 
+    } */
+
+    .el--1 {
+      background-color: blueviolet;
+      align-self: flex-end;
+      /* order: 1 */
+    }
+
+    .el--6 {
+      background-color: blueviolet;
+      order: -1;
+      /* Move element to the front.*/
     }
   </style>
 </head>
@@ -63,8 +82,7 @@
     <div class="el el--4">are</div>
     <div class="el el--5">amazing</div>
     <div class="el el--6">languages</div>
-    <div class="el el--7">to</div>
-    <div class="el el--8">learn</div>
+
   </div>
 </body>
 
