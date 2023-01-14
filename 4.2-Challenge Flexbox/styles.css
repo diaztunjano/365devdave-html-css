@@ -131,9 +131,15 @@ a:active {
 .product-pricing {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .product-details {
-  flex: 0 0 200px;
+  flex: 1;
+}
+.image-container {
+  flex: 1;
+}
+.product-info {
+  flex: 1;
 }
