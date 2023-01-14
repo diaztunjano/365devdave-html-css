@@ -51,25 +51,38 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 30px;
+      /* gap: 30px; */
 
     }
 
-    /* .el {
-      Mala practica especificarlo para todos. Lo mejor es en el flex container
-      margin-right: 30px; 
-    } */
+    .el {
+      /* Mala practica especificarlo para todos. Lo mejor es en el flex container */
+      /* margin-right: 30px; */
+      /*
+      DEFAULTS:
+      flex-grow: 0;
+      flex-shrink:1;
+      flex-basis:auto;
+      */
+
+      flex-grow: 1;
+      /* flex-shrink: 1; */
+      /* flex-basis: 100px; */
+
+      /* flex-grow: 1; */
+    }
 
     .el--1 {
-      background-color: blueviolet;
       align-self: flex-end;
+
       /* order: 1 */
+
     }
 
-    .el--6 {
-      background-color: blueviolet;
-      order: -1;
+    .el--3 {
+      /* flex-grow: 4; */
       /* Move element to the front.*/
+      /* order: -1; */
     }
   </style>
 </head>
@@ -81,7 +94,6 @@
     <div class="el el--3">CSS</div>
     <div class="el el--4">are</div>
     <div class="el el--5">amazing</div>
-    <div class="el el--6">languages</div>
 
   </div>
 </body>
