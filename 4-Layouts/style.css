@@ -113,11 +113,6 @@ li:last-child {
   font-style: italic;
 } */
 
-#author {
-  font-style: italic;
-  font-size: 18px;
-}
-
 #copyright {
   font-size: 16px;
 }
@@ -198,7 +193,7 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 
@@ -223,9 +218,9 @@ h1::first-letter {
   margin-right: 5px;
 }
 
-h3 + p::first-line {
-  /* color: red; */
-}
+/* h3 + p::first-line {
+  color: red;
+} */
 
 h2 {
   /* background-color: orange; */
@@ -269,13 +264,18 @@ nav p {
 
 /* FLOATS */
 
-h1 {
+/* h1 {
   float: left;
 }
 
 nav {
   float: right;
-}
+} */
+
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
 
 .text {
   color: yellow;
@@ -285,7 +285,44 @@ footer p {
   color: green !important;
 }
 
-/* nav a:link,
-nav p {
+/* FLEX PARTS: */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-image-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-style: italic;
   font-size: 18px;
-} */
+  margin-bottom: 0;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-link:link {
+  font-size: 18px;
+  font-size: normal;
+  font-size: italic;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 0px;
+}
