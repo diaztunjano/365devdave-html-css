@@ -12,11 +12,31 @@ FONT SIZE SYSTEM (px)
   box-sizing: border-box;
 }
 
+/* 
+
+MAIN COLOR: #087f5b
+Tilts:
+#099268
+#0ca678
+#12b886
+#20c997
+
+
+GREY COLOR: #343a40 
+#343a40
+#495057
+#868e96
+#adb5bd
+#ced4da
+*/
+
 /* ------------------------ */
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
   font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -40,6 +60,35 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  /* Since buttons are inline elements, padding is not applied:
+  So I need to set it to inline-block */
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  letter-spacing: 1.1px;
+  padding: 8px 12px;
 }
 
 /* ------------------------ */
@@ -93,6 +142,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -150,4 +202,5 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
+  color: #868e96;
 }
