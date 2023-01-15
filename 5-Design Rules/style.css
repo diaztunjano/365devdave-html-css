@@ -6,12 +6,6 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* 
 
 MAIN COLOR: #087f5b
@@ -29,6 +23,19 @@ GREY COLOR: #343a40
 #adb5bd
 #ced4da
 */
+
+/*
+ICONS: Using heroicons.com
+
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* ------------------------ */
 /* GENERAL STYLES */
@@ -127,7 +134,11 @@ img {
 }
 
 /* FEATURES */
-.features-icon {
+.feature-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -191,6 +202,9 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
 }
 
 .chair-price {
