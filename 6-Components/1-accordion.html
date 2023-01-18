@@ -81,6 +81,10 @@
             /* color: #087f5b */
         }
 
+        .number {
+            color: #ced4da;
+        }
+
         .icon {
             height: 24px;
             width: 24px;
@@ -103,7 +107,19 @@
             flex-direction: column;
             gap: 12px;
             margin-left: 18px;
+        }
 
+        .open {
+            border-top: 4px solid #087f5b;
+        }
+
+        .open .hidden-box {
+            display: block;
+        }
+
+        .open .number,
+        .open .text {
+            color: #087f5b;
         }
     </style>
 </head>
@@ -131,7 +147,7 @@
             </div>
         </div>
 
-        <div class="item">
+        <div class="item open">
             <p class="number">02</p>
             <p class="text">This is my title for the section</p>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
