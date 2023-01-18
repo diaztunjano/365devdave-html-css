@@ -82,6 +82,7 @@
             font-weight: 500;
             line-height: 1.6;
             color: #e6fcf5;
+            margin-bottom: 32px;
         }
 
         .testimonial-author {
@@ -134,6 +135,23 @@
             transform: translate(50%, -50%);
 
         }
+
+        .dots {
+            display: flex;
+            position: absolute;
+            gap: 8px;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 32px);
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: #fff;
+            border: 2px solid #087f5b;
+            border-radius: 50%;
+        }
     </style>
 </head>
 
@@ -148,7 +166,6 @@
         </blockquote>
 
         <button class="btn btn--left">
-
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="btn-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -159,8 +176,14 @@
                 stroke="currentColor" class="btn-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
-
         </button>
+
+        <div class="dots">
+            <button class="dot"> </button>
+            <button class="dot"> </button>
+            <button class="dot"> </button>
+            <button class="dot"> </button>
+        </div>
     </div>
 
 </body>
