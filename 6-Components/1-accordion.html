@@ -59,6 +59,9 @@
         .accordion {
             width: 700px;
             margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
         }
 
         .item {
@@ -75,7 +78,7 @@
         .text {
             font-size: 24px;
             font-weight: 500;
-            color: #087f5b
+            /* color: #087f5b */
         }
 
         .icon {
@@ -86,6 +89,7 @@
 
         .hidden-box {
             grid-column: 2/3;
+            display: none;
         }
 
         .hidden-box p {
@@ -107,6 +111,27 @@
 <body>
     <div class="accordion">
         <div class="item">
+            <p class="number">01</p>
+            <p class="text">First title fuck yes!</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+            </svg>
+            <div class="hidden-box">
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur eveniet placeat
+                    voluptates? Quia repellendus reiciendis eum. Quidem voluptatum dolorum laudantium doloribus porro
+                    esse
+                    molestias odit. Ex doloremque iste facilis quod!</p>
+                <ul>
+                    <li>Lorem ipsum dolor</li>
+                    <li>Quia repellendus reiciendis eum.</li>
+                    <li>Quidem voluptatum dolorum laudantium.</li>
+                    <li>Ex doloremque iste facilis quod!</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item">
             <p class="number">02</p>
             <p class="text">This is my title for the section</p>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -126,7 +151,31 @@
                 </ul>
             </div>
         </div>
+
+        <div class="item">
+            <p class="number">03</p>
+            <p class="text">Third title yeah baby</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+            </svg>
+            <div class="hidden-box">
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur eveniet placeat
+                    voluptates? Quia repellendus reiciendis eum. Quidem voluptatum dolorum laudantium doloribus porro
+                    esse
+                    molestias odit. Ex doloremque iste facilis quod!</p>
+                <ul>
+                    <li>Lorem ipsum dolor</li>
+                    <li>Quia repellendus reiciendis eum.</li>
+                    <li>Quidem voluptatum dolorum laudantium.</li>
+                    <li>Ex doloremque iste facilis quod!</li>
+                </ul>
+            </div>
+
+        </div>
     </div>
+
+
 
 </body>
 
