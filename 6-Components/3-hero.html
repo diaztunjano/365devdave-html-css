@@ -12,8 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* So that the element has PRECISELY the height and width specified */
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 900px;
+        }
+
         html {
             font-family: 'Rubik', sans-serif;
+        }
+
+        header {
+            background-color: orangered;
+            height: 100vh;
         }
 
         nav {
@@ -54,6 +71,7 @@
 
         section {
             padding: 96px 0;
+            background-color: #f7f7f7;
         }
     </style>
 </head>
@@ -62,12 +80,12 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <div class="logo">LOGO</div>
             <div class="nav">NAV</div>
         </nav>
     </header>
-    <div>
+    <div class="container">
         <h1>Healthy Meal delivered to your door, every single day.</h1>
         <p>A subscription that will make you eat healthy again. tailored to your personal tastes and nutritional value
         </p>
@@ -75,7 +93,7 @@
     </div>
 
     <section>
-        <div>
+        <div class="container">
             <h2>Some random heading</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum expedita autem velit, iusto a est culpa
                 cumque mollitia libero explicabo, quibusdam reprehenderit labore sint quo sed sapiente dolores.
