@@ -265,10 +265,12 @@ body {
 /****************************/
 
 .section-how {
-  background-color: red;
 }
 
 .section-how div div {
   padding: 2rem;
-  background-color: #333;
+}
+
+.step-img {
+  width: 50%;
 }
