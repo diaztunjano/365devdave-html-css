@@ -16,6 +16,9 @@ Default: 1
 
 Primary: #e67e22
 Tints:
+#fae5d3
+#b8651b
+
 Shades:
 Greys: #555
 
@@ -44,4 +47,76 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+/* HERO SECTION */
+.section-hero {
+  background-color: #fae5d3;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 2rem;
+
+  transition: all 0.6s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #b8651b;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  /* Not using this because, when hovered, all the layout jumps a bit */
+  /* border: 0.1rem solid #fff; */
+
+  /* Trucazo para agregar border adentro: */
+  box-shadow: inset 0 0 0 3px #fff;
 }
