@@ -13,21 +13,31 @@ Bold: 700
 
 - Line heights:
 Default: 1
+Small: 1.05
+Paragraph: 1.6
 
 ----- 02: COLORS ---------
 
-Primary: #e67e22
+Primary: 
+#e67e22
+
 Tints:
 #fae5d3
 #cf711f
 #b8651b
 
 Shades:
-Greys: #555
+
+Greys: 
+#555
+#333
 
 ----- 05: Shadows ------
+
 ----- 06: Border Radius ------
 Default: 9px
+
+
 ----- 07: Whitespace ------
 
 SPACING SYSTEM (px)
