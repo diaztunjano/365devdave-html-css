@@ -120,6 +120,12 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
 .grid {
   display: grid;
   gap: 9.6rem;
@@ -259,23 +265,10 @@ body {
 /****************************/
 
 .section-how {
-  padding: 9.6rem 0;
-  background-color: black;
-}
-
-.section-how div {
-  padding: 2rem;
-}
-
-.section-how div:nth-child(1) {
-  background-color: blue;
-}
-.section-how div:nth-child(2) {
   background-color: red;
 }
-.section-how div:nth-child(3) {
-  background-color: green;
-}
-.section-how div:nth-child(4) {
-  background-color: yellow;
+
+.section-how div div {
+  padding: 2rem;
+  background-color: #333;
 }
