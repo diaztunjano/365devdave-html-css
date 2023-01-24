@@ -35,6 +35,10 @@ Default: 9px
 
 ----- 07: Whitespace ------
 
+----- 08: letter spacing ------
+  letter-spacing: 0.75px;
+
+
 
 Typography:
 
@@ -68,13 +72,38 @@ body {
 /* GENERAL REUSABLE COMPONENTS */
 /****************************/
 
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  /* color: #343a40; */
+  letter-spacing: -0.5px;
+}
+
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
-  font-weight: 700;
-  color: #333;
-  letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
 
 .margin-right-sm {
@@ -265,6 +294,7 @@ body {
 /****************************/
 
 .section-how {
+  padding: 9.6rem 0;
 }
 
 .section-how div div {
