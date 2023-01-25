@@ -42,10 +42,6 @@ strong {
   letter-spacing: 0.75px;
 }
 
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -92,6 +88,7 @@ strong {
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 0.2rem;
+  transition: all 0.2s;
 }
 
 .link:hover,
@@ -129,6 +126,16 @@ strong {
   align-items: center;
 }
 
+/* HELPER CLASSES */
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
 }
