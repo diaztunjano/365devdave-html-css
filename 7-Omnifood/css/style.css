@@ -206,22 +206,32 @@ body {
   position: relative;
 }
 
-.step-img-box:before {
+.step-img-box::before,
+.step-img-box::after {
   content: "";
   display: block;
-  background-color: #fdf2e9;
-  width: 60%;
-  /* height: 60%;  <------ Doesn't work. because it needs a value, not % */
-
-  /* We use padding bottom because it uses the size of the parent's element width (so 60% of parent's width).*/
   border-radius: 50%;
-  padding-bottom: 60%;
   position: absolute;
 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
+.step-img-box::before {
+  padding-bottom: 60%;
+  width: 60%;
+  /* height: 60%;  <------ Doesn't work. because it needs a value, not % */
+
+  /* We use padding bottom because it uses the size of the parent's element width (so 60% of parent's width).*/
+
+  z-index: -2;
+  background-color: #fdf2e9;
+}
+.step-img-box::after {
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: #fae5d3;
   z-index: -1;
 }
 
