@@ -298,6 +298,7 @@ body {
 
 .meal:hover {
   transform: translateY(-0.5rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.105);
 }
 
 .meal-img {
