@@ -460,10 +460,23 @@
                         </p>
 
                         <form action="#" class="cta-form">
-                            <label for="full-name">Full Name</label>
-                            <input id="full-name" type="text" placeholder="Ferxxo Mor">
-                            <label for="email">Email</label>
-                            <input id="email" type="email" placeholder="ferxxo@gmail.com">
+                            <div>
+                                <label for="full-name">Full Name</label>
+                                <input id="full-name" type="text" placeholder="Ferxxo Mor" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input id="email" type="email" placeholder="ferxxo@gmail.com" required>
+                            </div>
+                            <div>
+                                <label for="select-where">Where did you hear from us?</label>
+                                <select name="" id="select-where">
+                                    <option value="friend">Friends</option>
+                                    <option value="family">Family</option>
+                                    <option value="podcast">Podcast</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
                             <button class="btn"> Sign up now</button>
                         </form>
 
