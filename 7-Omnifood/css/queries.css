@@ -1,0 +1,13 @@
+/* rem and em DONT depend on html font-size in media queries! */
+
+/****************************/
+/* BELOW 1344 PX (SMALLER DESKTOP) */
+/****************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
