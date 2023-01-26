@@ -554,7 +554,6 @@ body {
   background-color: #e67e22;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.145);
   border-radius: 11px;
-  height: 50rem;
   background-image: linear-gradient(#f3a765, #e67e22);
   overflow: hidden;
 }
@@ -615,5 +614,7 @@ body {
   color: #aaa;
 }
 
-.cta-form button {
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }

@@ -2,6 +2,13 @@
 /* GENERAL REUSABLE COMPONENTS */
 /****************************/
 
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem #e67d2276;
+}
+
 strong {
   font-weight: 500;
 }
@@ -89,6 +96,14 @@ strong {
 .btn--form {
   background-color: #45260a;
   color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+  transition: all 0.2s;
+}
+
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #45260a;
   align-self: end;
   padding: 1.2rem;
 }
