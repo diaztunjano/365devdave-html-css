@@ -52,7 +52,7 @@ SPACING SYSTEM (px)
 */
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 * {
@@ -97,7 +97,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -141,6 +141,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
+  gap: 9.6rem;
   padding: 0 3.2rem;
   align-items: center;
 }
@@ -286,7 +287,7 @@ body {
 /****************************/
 
 .section-meals {
-  padding: 9.6rem;
+  padding: 9.6rem 0;
 }
 
 .meal {
@@ -406,6 +407,12 @@ body {
   color: #6f6f6f;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
 .gallery-item {
   overflow: hidden;
 }
@@ -414,13 +421,6 @@ body {
   display: block;
   width: 100%;
   transition: all 0.4s;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.6rem;
-  padding: 1.6rem;
 }
 
 .gallery-item img:hover {
@@ -432,7 +432,7 @@ body {
 /****************************/
 
 .section-pricing {
-  padding: 9.6rem;
+  padding: 9.6rem 0;
 }
 
 .pricing-plan {
