@@ -215,8 +215,24 @@
 }
 
 /****************************/
-/* BELOW 704 PX (PHONES) */
+/* BELOW 544 PX (PHONES) */
 /****************************/
+
+@media (max-width: 34.5em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+}
 
 /* FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
