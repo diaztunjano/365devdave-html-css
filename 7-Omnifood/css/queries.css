@@ -229,8 +229,55 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
   .hero {
     padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 2.4rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos img {
+    height: 1.6rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1/2;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5/6;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-image-box {
+    height: 32rem;
+    grid-row: 1;
   }
 }
 
