@@ -78,3 +78,36 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });
+
+/* SMOOTH SCROLLING */
+
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const hrefAtt = link.getAttribute("href");
+
+    // Scroll back to top:
+    if (hrefAtt === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    // other cases that are not the top:
+    // Get the ID selector
+    if (hrefAtt !== "#" && hrefAtt.startsWith("#")) {
+      const sectionEl = document.querySelector(hrefAtt);
+      sectionEl.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+
+    // Close mobile nav.
+    if (link.classList.contains("main-nav-link")) {
+      headerEl.classList.toggle("nav-open");
+    }
+  });
+});
